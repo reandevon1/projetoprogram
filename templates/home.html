@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cálculo da Tarifa Social</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Cálculo da Tarifa Social</h1>
+    </header>
+    <div class="container">
+        <p>Descubra se a sua família é elegível para receber a Tarifa Social de Energia Elétrica, auxílio social garantido pelo Governo Federal para famílias de baixa renda.</p>
+        <a href="{{ url_for('question_one') }}" class="primary">Começar</a>
+        <a href="{{ url_for('index') }}" class="primary">Voltar ao SustentaLuz</a>
+    </div>
+</body>
+</html>

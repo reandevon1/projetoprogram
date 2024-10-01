@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SustentaLuz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+    <header>
+        <h1>SustentaLuz</h1>
+    </header>
+    <div class="navigation-buttons">
+        <button class="nav-btn" data-target="home-section">Início</button>
+        <button class="nav-btn" data-target="section1">Como ler a conta de energia?</button>
+        <button class="nav-btn" data-target="section2">Que etiquetas são essas?</button>
+        <a href="http://127.0.0.1:5000/" class="primary nav-btn-discount">Calcular o meu desconto</a>
+        <a href="https://reandevon1.github.io/Quizz-Sobre-Energias/" class="primary">Que tipo de energia você é?</a>
+        <a href="https://forms.gle/Vhpd1hBaBBtW9HNfA" class="primary">Pesquisa</a>
+    </div>
+    <div class="container">
+        <div id="home-section" class="section-container visible">
+            <h2>O que é a Tarifa Social de Energia?</h2>
+            <p>A tarifa social é um auxílio criado pelo Governo Federal para diminuir o preço que as famílias de baixa renda precisam gastar com energia elétrica todo mês.</p>
+            <p>Assista ao vídeo a seguir e saiba se você e a sua família se enquadram nos requisitos para o benefício:</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/-hVqaPB038Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>Ficou alguma dúvida? Veja as ilustrações a seguir com as quantidades de desconto mensal possíveis:</p>
+            <h3>1. Indígenas e quilombolas</h3>
+            <img src="https://www.gov.br/aneel/pt-br/centrais-de-conteudos/conteudo-educativo/cards-para-midias-sociais/tarifa-social-de-energia-eletrica/20211130-card-tsee-beneficio-indigena.jpeg/@@images/image" alt="Famílias indígenas e quilombolas">
+            <h3>2. Baixa renda</h3>
+            <img src="https://www.gov.br/aneel/pt-br/centrais-de-conteudos/conteudo-educativo/cards-para-midias-sociais/tarifa-social-de-energia-eletrica/20211130-card-tsee-beneficio.jpeg/@@images/image" alt="Famílias de baixa renda">
+            <p>Ei! Descubra quanto sua família economizaria com a Tarifa Social neste mês em <a href="http://127.0.0.1:5000/" class="nav-btn-discount">Calcular o meu desconto</a>.</p>
+        </div>
+        <div id="section1" class="section-container hidden">
+            <h2>Como ler a conta de energia?</h2>
+            <p>Para entender a sua conta de energia elétrica é muito simples, entenda como:
+
+                Primeiramente, ao olhar sua conta de energia elétrica, veja se os dados estão corretos, isso te certificará que você está realmente lendo a sua e não de outra pessoa.
+                No meio desses dados, você encontrará a sua casa numerada como "Unidade consumidora" ou "Residência consumidora", isso indica que a sua casa está recebendo energia elétrica da distribuidora.
+                Logo abaixo, você vai encontrar a composição da fatura, que totaliza 100%.
+                A fatura de energia é composta pelo consumo de eletricidade, os custos para produzi-la, os impostos e taxas setoriais, além de possíveis cobranças extras das bandeiras tarifárias.
+                O consumo da eletricidade é o que você e a sua família podem mudar na prática, ao optarem por aparelhos elétricos com excelentes eficiências energéticas e economizando energia elétrica.
+                Por último, na conta também é possível identificar o código de barras para o seu pagamento. Atente-se a data e evite o corte.
+            
+            </p>
+        </div>
+        <div id="section2" class="section-container hidden">
+            <h2>Que etiquetas são essas?</h2>
+            <p>Atualmente, existem três jeitos de saber o custo-benefício de um produto antes de comprá-lo, ou seja, se vale a pena financeiramente ou não, são eles: O selo PROCEL, o selo CONPET e a Etiqueta Nacional de Eficiência Energética.</p>
+            <p>Vamos começar com a Etiqueta, ela foi criada para informar a quantidade de energia que um determinado produto consome a cada hora ligado. A escala vai de A até E, A sendo a maior eficiência possível para um produto e E a menor eficiência. Quanto menor eficiência, mais energia vai ser consumida para o funcionamento do aparelho e maior vai ser o custo na conta de energia elétrica mensal.</p>
+            <p>O próximo é o Selo PROCEL, que a partir da Etiqueta Nacional de Eficiência Energética, é estampado em produtos que possuem a eficiência A, que é a melhor, e são categorizados como produtos com custos-benefícios excelentes.</p>
+            <p>Por último, o selo CONPET é estampado em produtos que usam combustíveis, como fogões, e que são eficientes energeticamente.</p>
+            <img src="https://www.gov.br/mme/pt-br/assuntos/noticias/selo-procel-leva-mais-economia-e-sustentabilidade-aos-brasileiros/Infografico_Selos1.png" alt="Infográfico sobre selos de eficiência" style="width: 100%; height: auto; max-width: 100%; display: block; margin: 0 auto;">
+            <p>Dito isso, você deve sempre analisar quais são os produtos que merecem ser levados para casa: prefira sempre os que têm o Selo PROCEL, pois mesmo que inicialmente possam ser mais caros, a longo prazo a economia será muito maior na conta de energia elétrica.</p>
+            <p>Quer saber quais produtos possuem o Selo PROCEL? <a href="http://www.procelinfo.com.br/main.asp?View={B70B5A3C-19EF-499D-B7BC-D6FF3BABE5FA}" target="_blank">Clique aqui</a>.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 SustentaLuz. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

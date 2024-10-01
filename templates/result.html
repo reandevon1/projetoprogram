@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cálculo da Tarifa Social</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Cálculo da Tarifa Social</h1>
+    </header>
+    <div class="container">
+        {% if mensagem %}
+            <p>{{ mensagem }}</p>
+        {% elif desconto is not none %}
+            <p>Se o desconto já estivesse sendo aplicado, ele seria de {{ desconto }}%.</p>
+        {% else %}
+            <p>Não foi possível calcular o desconto.</p>
+        {% endif %}
+        <p>Para mais informações sobre benefícios, dirija-se a um Centro de Referência de Assistência Social (CRAS) próximo a você.</p>
+        <a href="{{ url_for('home') }}" class="primary">Voltar à página inicial</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cálculo da Tarifa Social</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Cálculo da Tarifa Social</h1>
+    </header>
+    <div class="container">
+        <h2>A sua família se enquadra em um dos seguintes requisitos?</h2>
+        <ul>
+            <li>Renda mensal de até meio salário mínimo por pessoa.</li>
+            <li>Renda mensal de até três salários mínimos, desde que possua algum portador de doença que necessite da utilização de algum aparelho elétrico no tratamento.</li>
+            <li>Família com algum integrante, seja idoso com idade igual ou superior a 65 anos ou pessoa com deficiência, que receba o Benefício de Prestação Continuada (BPC).</li>
+        </ul>
+        <form method="POST">
+            <label>
+                <input type="radio" name="resposta_dois" value="sim" required> Sim
+            </label>
+            <label>
+                <input type="radio" name="resposta_dois" value="não" required> Não
+            </label>
+            <button type="submit" class="send">Enviar</button>
+        </form>
+        {% if error %}
+            <p class="error">{{ error }}</p>
+        {% endif %}
+        <a href="{{ url_for('home') }}" class="primary">Voltar ao SustentaLuz</a>
+    </div>
+</body>
+</html>
